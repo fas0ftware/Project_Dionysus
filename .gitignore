@@ -1,0 +1,26 @@
+# --- SECURITY (CRITICAL) ---
+# Ignore environment variables file to protect API Keys
+.env
+.env.local
+
+# --- PYTHON ---
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- VIRTUAL ENVIRONMENT ---
+# Ignore the virtual environment folder
+venv/
+.venv/
+env/
+Scripts/
+
+# --- IDE SETTINGS ---
+# Ignore editor specific settings
+.vscode/
+.idea/
+
+# --- OPERATING SYSTEM ---
+.DS_Store
+Thumbs.db

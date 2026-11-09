@@ -16,4 +16,5 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - run: pip install requests
-      - run: python -m unittest discover -v
+      - run: python tests/test_mood.py
+      - run: python tests/test_weather.py

@@ -23,4 +23,5 @@ Scripts/
 
 # --- OPERATING SYSTEM ---
 .DS_Store
-Thumbs.db
+Thumbs.db.env.*
+!.env.example

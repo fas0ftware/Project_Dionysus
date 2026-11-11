@@ -1,0 +1,13 @@
+[theme]
+base = "dark"
+primaryColor = "#FF4B4B"
+backgroundColor = "#0E1117"
+secondaryBackgroundColor = "#1A1D24"
+
+[server]
+# Keep Streamlit's CSRF and CORS protection on (the defaults); never disable them.
+enableXsrfProtection = true
+enableCORS = true
+
+[browser]
+gatherUsageStats = false

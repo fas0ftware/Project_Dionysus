@@ -25,3 +25,6 @@ Scripts/
 .DS_Store
 Thumbs.db.env.*
 !.env.example
+
+# Streamlit secrets (API keys on Streamlit Cloud)
+.streamlit/secrets.toml

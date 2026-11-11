@@ -86,7 +86,7 @@ def main():
         city = st.text_input("City", placeholder="Type a city, e.g. Kyoto or Paris,FR") \
             if option == CUSTOM else (option or "")
     with col2:
-        btn = st.button("SCAN SKY", use_container_width=True, type="primary")
+        btn = st.button("SCAN SKY", width="stretch", type="primary")
 
     unit = st.radio("Units", ["°C", "°F"], horizontal=True, label_visibility="collapsed",
                     index=1 if st.query_params.get("unit") == "F" else 0)
@@ -134,8 +134,8 @@ def main():
     for track in tracks:
         st.markdown(track_card(track), unsafe_allow_html=True)
         a, b = st.columns(2)
-        a.link_button("▶ Spotify", track.spotify_url, use_container_width=True)
-        b.link_button("▶ YouTube", track.youtube_url, use_container_width=True)
+        a.link_button("▶ Spotify", track.spotify_url, width="stretch")
+        b.link_button("▶ YouTube", track.youtube_url, width="stretch")
 
     st.caption(f"Share this result: `?city={city}`  ·  Dionysus v{__version__} · weather by OpenWeatherMap · results cached for 10 minutes")
 
